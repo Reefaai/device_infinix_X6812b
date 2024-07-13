@@ -16,9 +16,9 @@ fi
 
 if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
     export TW_DEFAULT_LANGUAGE="en"
-    export OF_DEVICE_ALT="X6812B,FULL-64"
+    export OF_TARGET_DEVICES="X6812B,FULL-64"
 	export LC_ALL="C"
-	export OF_AB_DEVICE=1
+	export FOX_AB_DEVICE=1
 	export FOX_EXTREME_SIZE_REDUCTION=1
 	export ALLOW_MISSING_DEPENDENCIES=true
     export FOX_USE_TAR_BINARY=1
@@ -67,12 +67,11 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	export OF_SKIP_FBE_DECRYPTION_SDKVERSION=34 # Don't try to decrypt A14(?)
     
 	# R11
-	export FOX_R11=2
 	export FOX_VERSION="R11.1"
 	export FOX_VARIANT=Alpha
 	export OF_PATCH_AVB20=1
 	export OF_MAINTAINER="Shtsu"
-	export FOX_ADVANCED_SECURITY=1
+	export OF_ADVANCED_SECURITY=1
 	export OF_USE_TWRP_SAR_DETECT=1
 
 	# run a process after formatting data to work-around MTP issues
