@@ -40,8 +40,8 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
         export FOX_USE_XZ_UTILS=1
 	
 	# OTA
-        export OF_SUPPORT_ALL_BLOCK_OTA_UPDATES=1
-        export OF_FIX_OTA_UPDATE_MANUAL_FLASH_ERROR=1
+        export OF_SUPPORT_ALL_BLOCK_OTA_UPDATES=0
+        export OF_FIX_OTA_UPDATE_MANUAL_FLASH_ERROR=0
 
 	# encryption
 	export OF_DISABLE_FORCED_ENCRYPTION=1
@@ -69,7 +69,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	# R11
 	export FOX_R11=2
 	export FOX_VERSION="R11.1"
-	export FOX_VARIANT=Stable
+	export FOX_VARIANT=Vanilla
 	export OF_PATCH_AVB20=1
 	export OF_MAINTAINER="Shtsu"
 	export FOX_ADVANCED_SECURITY=1
