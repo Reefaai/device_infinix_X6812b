@@ -69,7 +69,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	# R11
 	export FOX_R11=2
 	export FOX_VERSION="R11.1"
-	export FOX_VARIANT=Test
+	export FOX_VARIANT=Stable
 	export OF_PATCH_AVB20=1
 	export OF_MAINTAINER="Shtsu"
 	export FOX_ADVANCED_SECURITY=1
