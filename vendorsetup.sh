@@ -16,7 +16,7 @@ fi
 
 if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
     export TW_DEFAULT_LANGUAGE="en"
-    export TARGET_DEVICES_ALT="X6812B,FULL-64"
+    export TARGET_DEVICE_ALT="X6812B,FULL-64"
 	export LC_ALL="C"
 	export FOX_AB_DEVICE=1
 	export FOX_EXTREME_SIZE_REDUCTION=1
